@@ -10,7 +10,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Load and Cache Dependencies
-        uses: ./.github/actions/cached-deps/action.yml # path starts at root folder of the project
+        uses: ./.github/actions/cached-deps # path starts at root folder of the project
       - name: Lint code
         run: npm run lint
   test:
